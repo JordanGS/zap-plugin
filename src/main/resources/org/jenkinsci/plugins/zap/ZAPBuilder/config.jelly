@@ -24,43 +24,51 @@ SOFTWARE.
 
 <?jelly escape-by-default='true'?>
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
-  <f:entry field="stuff" title="${%Stuff}">
+  <f:entry field="stuffA" title="${%StuffA}">
     <f:textbox/>
   </f:entry>
 
-  <f:section title="${%Source Details}">
+  <f:entry field="stuffB" title="${%StuffB}">
+    <f:textbox/>
+  </f:entry>
+  
+  <f:entry field="stuffC" title="${%StuffC}">
+    <f:textbox/>
+  </f:entry>
+    
+  <f:section title="${%SourceDetails}">
     <f:entry>
       <table width="100%">
         <tr>
-          <td>Title</td>
+          <td> ${%Title}</td>
           <td colspan="3">
             <f:textbox field="exportreportTitle"/>
           </td>
         </tr>
         <tr>
-          <td>Scan Date</td>
+          <td> ${%ScanDate}</td>
           <td>
-            <f:textbox field="exportreportScanDateA"/>
+            <f:textbox field="exportreportScanDate"/>
           </td>
-          <td>Scan Version</td>
+          <td> ${%ScanVersion}</td>
           <td>
-            <f:textbox field="exportreportReportDateA"/>
-          </td>
-        </tr>
-        <tr>
-          <td>Report Date</td>
-          <td>
-            <f:textbox field="exportreportScanVersionA"/>
-          </td>
-          <td>Report Version</td>
-          <td>
-            <f:textbox field="exportreportReportVersionA"/>
+            <f:textbox field="exportreportReportDate"/>
           </td>
         </tr>
         <tr>
-          <td>Description</td>
+          <td> ${%ReportDate}</td>
+          <td>
+            <f:textbox field="exportreportScanVersion"/>
+          </td>
+          <td> ${%ReportVersion}</td>
+          <td>
+            <f:textbox field="exportreportReportVersion"/>
+          </td>
+        </tr>
+        <tr>
+          <td> ${%Description}</td>
           <td colspan="3">
-            <f:textbox field="exportreportReportDescriptionA"/>
+            <f:textbox field="exportreportReportDescription"/>
           </td>
         </tr>
       </table>
