@@ -293,6 +293,419 @@ SOFTWARE.
     </f:entry>
   </f:section>
   
+  <f:section title="${%SourceDetailsF}">
+      <f:entry>
+    <table width="100%" border="1">
+      <tr>
+        <td width="50%">
+          <table width="100%" border="1">
+            <tr>
+              <td width="3%">1</td>
+              <td width="16%">2</td>
+              <td>3</td>
+              <td>4</td>
+              <!-- doesn't matter, fixed by the help shitty -->
+            </tr>
+            <f:entry field="exportreportTitleF" title="${%Title}">
+              <f:textbox/>
+            </f:entry>
+          </table>
+        </td>
+        <td width="50%">
+          <table width="100%" border="1">
+            <tr>
+              <td width="3%">1</td>
+              <td width="16%">2</td>
+              <td>3</td>
+              <td>4</td>
+              <!-- doesn't matter, fixed by the help shitty -->
+            </tr>
+            <f:entry field="exportreportTitleF2" title="${%Title}">
+              <f:textbox/>
+            </f:entry>
+          </table>
+        </td>
+      </tr>
+    </table>
+    </f:entry>
+  </f:section>
+
+  <f:section title="${%SourceDetailsF2}">
+      <f:entry>
+    <table width="100%" border="1">
+      <tr>
+        <td width="50%">
+          <table width="100%" border="1">
+            <tr>
+              <td width="3%">1</td>
+              <td width="200px">2</td>
+              <td>3</td>
+              <td>4</td>
+              <!-- doesn't matter, fixed by the help shitty -->
+            </tr>
+            <f:entry field="exportreportTitleF" title="${%Title}">
+              <f:textbox/>
+            </f:entry>
+          </table>
+        </td>
+        <td width="50%">
+          <table width="100%" border="1">
+            <tr>
+              <td width="3%">1</td>
+              <td width="200px">2</td>
+              <td>3</td>
+              <td>4</td>
+              <!-- doesn't matter, fixed by the help shitty -->
+            </tr>
+            <f:entry field="exportreportTitleF2" title="${%Title}">
+              <f:textbox/>
+            </f:entry>
+          </table>
+        </td>
+      </tr>
+    </table>
+    </f:entry>
+  </f:section>
+  
+  <f:section title="${%SourceDetailsG}">
+    <f:entry>
+      <table width="100%" border="1">
+        <tr>
+          <td colspan="2">
+            <table width="100%" border="1">
+              <!--<tr>
+                <td width="3%"> </td>
+                <td width="16%"> </td>
+                <td> </td>
+                <td> </td>
+              </tr>-->
+              <f:entry field="exportreportTitleGTop" title="${%Title}">
+                <f:textbox/>
+              </f:entry>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td width="50%">
+            <table width="100%" border="1">
+              <!--<tr>
+                <td width="3%"> </td>
+                <td width="16%"> </td>
+                <td> </td>
+                <td> </td>
+              </tr>-->
+              <f:entry field="exportreportTitleG" title="${%ScanDate}">
+                <f:textbox/>
+              </f:entry>
+            </table>
+          </td>
+          <td width="50%">
+            <table width="100%" border="1">
+              <!--<tr>
+                <td width="3%"> </td>
+                <td width="16%"> </td>
+                <td> </td>
+                <td> </td>
+              </tr>-->
+              <f:entry field="exportreportTitleG2" title="${%ScanVersion}">
+                <f:textbox/>
+              </f:entry>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td width="50%">
+            <table width="100%" border="1">
+              <!--<tr>
+                <td width="3%"> </td>
+                <td width="16%"> </td>
+                <td> </td>
+                <td> </td>
+              </tr>-->
+              <f:entry field="exportreportTitleG3" title="${%ReportDate}">
+                <f:textbox/>
+              </f:entry>
+            </table>
+          </td>
+          <td width="50%">
+            <table width="100%" border="1">
+              <!--<tr>
+                <td width="3%"> </td>
+                <td width="16%"> </td>
+                <td> </td>
+                <td> </td>
+              </tr>-->
+              <f:entry field="exportreportTitleG4" title="${%ReportVersion}">
+                <f:textbox/>
+              </f:entry>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table width="100%" border="1">
+              <!--<tr>
+                <td width="3%"> </td>
+                <td width="16%"> </td>
+                <td> </td>
+                <td> </td>
+              </tr>-->
+              <f:entry field="exportreportTitleGBot" title="${%Description}">
+                <f:textarea/>
+              </f:entry>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </f:entry>
+  </f:section>
+
+  <f:section title="${%SourceDetailsH}">
+    <f:entry>
+      <table width="100%" border="1">
+        <tr>
+          <td colspan="2">
+            <table width="100%" border="1">
+              <tr>
+                <td width="3%"></td>
+                <td width="16%"></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <f:entry field="exportreportTitleGTop" title="${%Title}">
+                <f:textbox/>
+              </f:entry>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td width="50%">
+            <table width="100%" border="1">
+              <tr>
+                <td width="6%"></td>
+                <td width="33%"></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <f:entry field="exportreportTitleG" title="${%ScanDate}">
+                <f:textbox/>
+              </f:entry>
+            </table>
+          </td>
+          <td width="50%">
+            <table width="100%" border="1">
+              <tr>
+                <td width="6%"></td>
+                <td width="33%"></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <f:entry field="exportreportTitleG2" title="${%ScanVersion}">
+                <f:textbox/>
+              </f:entry>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td width="50%">
+            <table width="100%" border="1">
+              <tr>
+                <td width="6%"></td>
+                <td width="33%"></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <f:entry field="exportreportTitleG3" title="${%ReportDate}">
+                <f:textbox/>
+              </f:entry>
+            </table>
+          </td>
+          <td width="50%">
+            <table width="100%" border="1">
+              <tr>
+                <td width="6%"></td>
+                <td width="33%"></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <f:entry field="exportreportTitleG4" title="${%ReportVersion}">
+                <f:textbox/>
+              </f:entry>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table width="100%" border="1">
+              <tr>
+                <td width="3%"></td>
+                <td width="16%"></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <f:entry field="exportreportTitleGBot" title="${%Description}">
+                <f:textarea/>
+              </f:entry>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </f:entry>
+  </f:section>
+
+  <f:section title="${%SourceDetailsI}">
+    <f:entry>
+      <table width="100%" border="0" cellspacing="0%" cellpadding="0%">
+        <tr height="0%">
+          <td colspan="2">
+            <table width="100%" border="0" cellspacing="0%" cellpadding="0%">
+              <tr height="0%">
+                <td width="3%"></td>
+                <td width="16%"></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <f:entry field="exportreportTitleGTop" title="${%Title}">
+                <f:textbox/>
+              </f:entry>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td width="50%">
+            <table width="100%" border="0" cellspacing="0%" cellpadding="0%">
+              <tr height="0%">
+                <td width="6%"></td>
+                <td width="33%"></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <f:entry field="exportreportTitleG" title="${%ScanDate}">
+                <f:textbox/>
+              </f:entry>
+            </table>
+          </td>
+          <td width="50%">
+            <table width="100%" border="0" cellspacing="0%" cellpadding="0%">
+              <tr height="0%">
+                <td width="6%"></td>
+                <td width="33%"></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <f:entry field="exportreportTitleG2" title="${%ScanVersion}">
+                <f:textbox/>
+              </f:entry>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td width="50%">
+            <table width="100%" border="0" cellspacing="0%" cellpadding="0%">
+              <tr height="0%">
+                <td width="6%"></td>
+                <td width="33%"></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <f:entry field="exportreportTitleG3" title="${%ReportDate}">
+                <f:textbox/>
+              </f:entry>
+            </table>
+          </td>
+          <td width="50%">
+            <table width="100%" border="0" cellspacing="0%" cellpadding="0%">
+              <tr height="0%">
+                <td width="6%"></td>
+                <td width="33%"></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <f:entry field="exportreportTitleG4" title="${%ReportVersion}">
+                <f:textbox/>
+              </f:entry>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table width="100%" border="0" cellspacing="0%" cellpadding="0%">
+              <tr height="0%">
+                <td width="3%"></td>
+                <td width="16%"></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <f:entry field="exportreportTitleGBot" title="${%Description}">
+                <f:textarea/>
+              </f:entry>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </f:entry>
+  </f:section>
+  
+    <f:section title="${%SourceDetailsJ}">
+    <f:entry>
+      <table width="100%" border="0">
+        <tr>
+          <td width="3%"></td>
+          <td width="16%"></td>
+          <td></td>
+          <td></td><!-- doesn't matter, fixed by the help shitty -->
+        </tr>
+        <f:entry field="exportreportTitleD" title="${%Title}">
+          <f:textbox/>
+        </f:entry>
+      </table>
+    </f:entry>
+    <f:entry>
+      <table width="100%" border="0">
+        <tr>
+          <td width="3%"></td>
+          <td width="16%"> ${%ScanDate}</td>
+          <td>
+            <f:textbox field="exportreportScanDate"/>
+          </td>
+          <td width="16%"> ${%ScanVersion}</td>
+          <td>
+            <f:textbox field="exportreportReportDate"/>
+          </td>
+          <td width="32px"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td> ${%ReportDate}</td>
+          <td>
+            <f:textbox field="exportreportScanVersion"/>
+          </td>
+          <td> ${%ReportVersion}</td>
+          <td>
+            <f:textbox field="exportreportReportVersion"/>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td> ${%Description}</td>
+          <td colspan="3">
+            <f:textarea field="exportreportReportDescription"/>
+          </td>
+          <td></td>
+        </tr>
+      </table>
+    </f:entry>
+  </f:section>
+  
+  <f:entry field="translationTestA" title="${%TranslationTestA}">
+    <f:textbox/>
+  </f:entry>
+  
+  <f:entry field="translationTestB" title="${%TranslationTestB}" help="/plugin/zap/help-translationTestB.html">
+    <f:textbox/>
+  </f:entry>
+  
  <f:section title="${%Startup}" />
     <f:optionalBlock title="${%Run as Pre-Build Step}" field="startZAPFirst" inline="true" />
     <f:property field="zaproxy" />
