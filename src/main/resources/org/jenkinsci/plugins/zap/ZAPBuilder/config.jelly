@@ -27,22 +27,31 @@ SOFTWARE.
   <f:entry field="stuffA" title="${%StuffA}">
     <f:textbox/>
   </f:entry>
+  <!-- works for help - English -->
 
-  <f:entry field="stuffB" title="${%StuffB}">
+  <f:entry field="stuffB" title="${%StuffB}" help="/plugin/zap/help-customB.html">
     <f:textbox/>
   </f:entry>
+  <!-- ERROR: Failed to load help file: Not Found -->
   
-  <f:entry field="stuffC" title="${%StuffC}">
+  <f:entry name="stuffC" title="${%StuffC}" help="/plugin/zap/help-projectConfig.html">
     <f:textbox/>
   </f:entry>
-    
-  <f:section title="${%SourceDetails}">
+  <!-- works for webapp folder that was specified as a source for the project - English -->
+
+  <f:entry field="stuffD" title="${%StuffD}" help="/plugin/zap/help-projectConfig.html">
+    <f:textbox/>
+  </f:entry>
+ 
+ <!-- FAILS: Not properly formatted -->
+ 
+  <f:section title="${%SourceDetailsA}">
     <f:entry>
-      <table width="100%">
+     <table width="100%" border="1">
         <tr>
           <td> ${%Title}</td>
           <td colspan="3">
-            <f:textbox field="exportreportTitle"/>
+            <f:textbox field="exportreportTitleA" help="/plugin/zap/help-exportreportTitleA.html" />
           </td>
         </tr>
         <tr>
@@ -70,6 +79,215 @@ SOFTWARE.
           <td colspan="3">
             <f:textbox field="exportreportReportDescription"/>
           </td>
+        </tr>
+      </table>
+    </f:entry>
+  </f:section>
+
+  <f:section title="${%SourceDetailsB}">
+    <f:entry>
+      <table width="100%" border="1">
+        <tr>
+          <td width="3%"></td>
+          <td width="16%"></td>
+          <td></td>
+          <td></td><!-- doesn't matter, fixed by the help shitty -->
+        </tr>
+        <f:entry field="exportreportTitleB" title="${%Title}" help="/plugin/zap/help-exportreportTitleB.html">
+          <f:textbox/>
+        </f:entry>
+      </table>
+    </f:entry>
+    <f:entry>
+      <table width="100%" border="1">
+        <tr>
+          <td width="3%"></td>
+          <td width="16%"> ${%ScanDate}</td>
+          <td>
+            <f:textbox field="exportreportScanDate"/>
+          </td>
+          <td width="16%"> ${%ScanVersion}</td>
+          <td>
+            <f:textbox field="exportreportReportDate"/>
+          </td>
+          <td width="32px"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td> ${%ReportDate}</td>
+          <td>
+            <f:textbox field="exportreportScanVersion"/>
+          </td>
+          <td> ${%ReportVersion}</td>
+          <td>
+            <f:textbox field="exportreportReportVersion"/>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td> ${%Description}</td>
+          <td colspan="3">
+            <f:textarea field="exportreportReportDescription"/>
+          </td>
+          <td></td>
+        </tr>
+      </table>
+    </f:entry>
+  </f:section>
+
+
+<!-- FAILS: TypeError: $(...) is undefined[Learn More] even if the HTML is an exact match for D and B which work -->
+  <f:section title="${%SourceDetailsC}">
+    <f:entry>
+      <table width="100%" border="1">
+        <tr>
+          <td class="setting-leftspace"> </td>
+          <td class="setting-name"> ${%Title}</td>
+          <td colspan="3" class="setting-main">
+            <f:textbox field="exportreportTitleC" />
+          </td>
+          <td class="setting-help">
+            <a helpURL="/plugin/zap/help-exportreportTitleC.html" href="#" class="help-button"><img src="/static/a0f14ceb/images/16x16/help.png" alt="Help for feature: Title" style="width: 16px; height: 16px; " class="icon-help icon-sm" /></a>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td> ${%ScanDate}</td>
+          <td>
+            <f:textbox field="exportreportScanDate"/>
+          </td>
+          <td> ${%ScanVersion}</td>
+          <td>
+            <f:textbox field="exportreportReportDate"/>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td> ${%ReportDate}</td>
+          <td>
+            <f:textbox field="exportreportScanVersion"/>
+          </td>
+          <td> ${%ReportVersion}</td>
+          <td>
+            <f:textbox field="exportreportReportVersion"/>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td> ${%Description}</td>
+          <td colspan="3">
+            <f:textbox field="exportreportReportDescription"/>
+          </td>
+          <td></td>
+        </tr>
+      </table>
+    </f:entry>
+  </f:section>
+    
+  <f:section title="${%SourceDetailsD}">
+    <f:entry>
+      <table width="100%" border="1">
+        <tr>
+          <td width="3%"></td>
+          <td width="16%"></td>
+          <td></td>
+          <td></td><!-- doesn't matter, fixed by the help shitty -->
+        </tr>
+        <f:entry field="exportreportTitleD" title="${%Title}">
+          <f:textbox/>
+        </f:entry>
+      </table>
+    </f:entry>
+    <f:entry>
+      <table width="100%" border="1">
+        <tr>
+          <td width="3%"></td>
+          <td width="16%"> ${%ScanDate}</td>
+          <td>
+            <f:textbox field="exportreportScanDate"/>
+          </td>
+          <td width="16%"> ${%ScanVersion}</td>
+          <td>
+            <f:textbox field="exportreportReportDate"/>
+          </td>
+          <td width="32px"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td> ${%ReportDate}</td>
+          <td>
+            <f:textbox field="exportreportScanVersion"/>
+          </td>
+          <td> ${%ReportVersion}</td>
+          <td>
+            <f:textbox field="exportreportReportVersion"/>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td> ${%Description}</td>
+          <td colspan="3">
+            <f:textarea field="exportreportReportDescription"/>
+          </td>
+          <td></td>
+        </tr>
+      </table>
+    </f:entry>
+  </f:section>
+
+<!-- FAILS: Because the f:entry, the table is 6 columns but you can't tell the jelly attribute that you want the text box to span 3 columns -->
+
+  <f:section title="${%SourceDetailsE}">
+    <f:entry>
+      <table width="100%" border="1">
+
+        <tr>
+          <td width="3%"></td>
+          <td width="16%"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td><!-- doesn't matter, fixed by the help shitty -->
+        </tr>
+        <f:entry field="exportreportTitleD" title="${%Title}">
+          <f:textbox/>
+        </f:entry>
+
+        <tr>
+          <td></td>
+          <td> ${%ScanDate}</td>
+          <td>
+            <f:textbox field="exportreportScanDate"/>
+          </td>
+          <td> ${%ScanVersion}</td>
+          <td>
+            <f:textbox field="exportreportReportDate"/>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td> ${%ReportDate}</td>
+          <td>
+            <f:textbox field="exportreportScanVersion"/>
+          </td>
+          <td> ${%ReportVersion}</td>
+          <td>
+            <f:textbox field="exportreportReportVersion"/>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td> ${%Description}</td>
+          <td colspan="3">
+            <f:textarea field="exportreportReportDescription"/>
+          </td>
+          <td></td>
         </tr>
       </table>
     </f:entry>
